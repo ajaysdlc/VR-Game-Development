@@ -80,9 +80,14 @@ a {
   overflow: hidden;
 }
 .services-outer {
-  padding: 1rem;
-  /* gap from screen edges */
+  padding: 0px 0 80px;
   background: #181727;
+}
+
+@media (max-width: 1024px) {
+  .services-outer {
+    padding: 1rem;
+  }
 }
 /* dark overlay so text stays readable */
 .services-bg::before {
@@ -590,14 +595,16 @@ a {
   font-style: normal;
   font-size: clamp(14px, 1vw + 0.5rem, 18px);
   line-height: 28px;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: 2.2rem;
 }
 
 @media (min-width: 1920px) {
   .hero-desc {
-    font-size: 1.6rem;
+    font-size: 24px;
+    line-height: 48px;
+      letter-spacing: 2px;
   }
 }
 
@@ -607,6 +614,9 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
+
 
 /* ============================================
    SECTION 2 — STATS
@@ -846,6 +856,16 @@ a {
   
 }
 
+.containerservice{
+
+  
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1rem;
+   
+}
+
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -951,6 +971,15 @@ a {
   transition: background .3s, border-color .3s, transform .2s;
 }
 
+@media (max-width: 350px) {
+  .service-arrow {
+    right: 0.0rem;
+    width: 28px;
+      height: 28px;
+      bottom: 0.4rem;
+  }
+}
+
 .service-arrow:hover {
   background: var(--grad);
   border-color: transparent;
@@ -1015,7 +1044,7 @@ a {
 
 /* ===================== WHY CHOOSE US ===================== */
 .why-section {
-  padding: 80px 0;
+  padding: 180px 0;
   position: relative;
   overflow: hidden;
   background: var(--bg-2);
@@ -1063,12 +1092,18 @@ font-family: 'Agency FB', var(--font-head), sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: clamp(1.8rem, 5vw + 1rem, 60px);
-  line-height: 72px;
+  line-height: 12px;
   letter-spacing: -0.01em;
   text-align: center;
   color: #fff;
   margin-bottom: 4rem;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .why-main-title {
+    transform: translateY(-70px);
+  }
 }
 
 @media (min-width: 500px) and (max-width: 1024px) {
@@ -1151,12 +1186,16 @@ font-family: 'Agency FB', var(--font-head), sans-serif;
 
 .why-card h4 {
   font-family: Agency FB;
-    font-weight: 400;
-    
-    font-size: 24px;
-    
-    line-height: 28px;
-    letter-spacing: 3%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 3%;
+}
+
+@media (max-width: 700px) {
+  .why-card h4 {
+    font-size: 18px;
+  }
 }
 
 /* Description indented to align under title not icon */
@@ -1194,7 +1233,7 @@ font-family: 'Agency FB', var(--font-head), sans-serif;
 }
 
 /* ── Mobile ── */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   /* Switch background images */
   .why-bg-img-wrap.desktop-only {
@@ -1210,6 +1249,8 @@ font-family: 'Agency FB', var(--font-head), sans-serif;
     line-height: 1.2;
     margin-bottom: 2rem;
   }
+
+  
 
   /* Single column on mobile */
   .why-grid {
@@ -1304,6 +1345,12 @@ font-size: clamp(1.8rem, 5vw + 1rem, 60px);
   color: #fff;
   line-height: 1.2;
   margin-bottom: 1.2rem;
+}
+
+@media (min-width: 1111px) {
+  .platforms-heading {
+    width: 500px;
+  }
 }
 
 .platforms-heading.left {
@@ -1444,7 +1491,7 @@ font-size: clamp(1.8rem, 5vw + 1rem, 60px);
   gap: 1.5rem;
   flex: 1;
 }
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
   .ptab-content {
     display: grid;
     gap: 0.5rem;
@@ -1704,6 +1751,7 @@ font-size: clamp(1.8rem, 5vw + 1rem, 60px);
   cursor: pointer;
   font-family: var(--font-head);
   font-size: 24px;
+  border-radius: 10px;
   font-weight: 600;
   color: #fff;
   transition: background .2s;
@@ -1848,8 +1896,7 @@ font-size: clamp(1.8rem, 5vw + 1rem, 60px);
 
 /* ===================== TECH STACK ===================== */
 .process-section {
-  background: #181727;
-  padding: 80px 0 0;
+  padding: 80px 0 80px;
   width: 100%;
 }
 
@@ -2233,7 +2280,7 @@ font-family: 'Agency FB', sans-serif;
   transform: rotate(360deg);
   font-family: 'Agency FB', 'Barlow Condensed', sans-serif;  font-weight: 400;
 
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.45);
   white-space: nowrap;
@@ -2284,7 +2331,7 @@ font-family: 'Agency FB', sans-serif;
   }
 
   .proc-step-label span {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .proc-info-card {
@@ -2522,11 +2569,7 @@ font-family: 'Agency FB', sans-serif;
   }
 }
 
-@media (max-width: 1240px) {
-  .containerrr {
-      padding: 38px 0;
-  }
-}
+
 
 .portfolio-slider-wrapper {
   width: 100%;
