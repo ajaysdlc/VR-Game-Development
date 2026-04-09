@@ -562,7 +562,131 @@ function validateAndSubmitConsult() {
 }
 
 
+const techTabs = document.querySelectorAll('.tech-tab');
+const techPanels = document.querySelectorAll('.tech-panel');
 
+techTabs.forEach((tab, i) => {
+  tab.addEventListener('click', () => {
+    techTabs.forEach(t => t.classList.remove('active'));
+    techPanels.forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    techPanels[i].classList.add('active');
+  });
+});
+
+
+ const steps = [
+    {
+      num: 1,
+      label: "Requirement Discussion",
+      desc: "We understand your idea, goals, and audience.",
+     img: "assets/images/requrmenet1.png",
+     alt: "Team discussing game requirements"
+   },
+    
+    {
+      num: 2,
+      label: "Game Design & Planning",
+      desc: "We define gameplay structure, interaction flow, and design elements.",
+      img: "assets/images/requrmenet2.png",
+      alt: "Game planning and strategy session"
+    },
+    {
+      num: 3,
+      label: "Development",
+      desc: "We build the VR game with proper functionality and performance.",
+      img: "assets/images/requrmenet3.png",
+      alt: "Game prototype development"
+    },
+    {
+      num: 4,
+      label: "Testing & Optimization",
+      desc: "We test across devices to fix issues and improve performance.",
+      img: "assets/images/requrmenet4.png",
+      alt: "Development phase coding"
+    },
+    {
+      num: 5,
+      label: "Deployment",
+      desc: "We launch the game on selected platforms.",
+      img: "assets/images/requrmenet5.png",
+      alt: "Testing phase"
+    },
+    {
+      num: 6,
+      label: "Support & Updates",
+      desc: "We provide updates and ongoing support after launch.",
+      img: "assets/images/requrmenet6.png",
+      alt: "Launch phase"
+    },
+    
+  ];
+
+  function padNum(n) { return n < 10 ? '0' + n : '' + n; }
+
+  // ── Build desktop tabs ──
+  const desktopTabs = document.getElementById('desktopTabs');
+  steps.forEach((step, i) => {
+    const col = document.createElement('button');
+    col.className = 'proc-step' + (i === 0 ? ' active' : '');
+    col.setAttribute('aria-label', step.label);
+    col.innerHTML = `
+      <div class="proc-step-num">${step.num}</div>
+      <div class="proc-step-label"><span>${step.label}</span></div>
+    `;
+    col.addEventListener('click', () => setActive(i));
+    desktopTabs.appendChild(col);
+  });
+
+  // ── Build mobile tabs ──
+  const mobileTabs = document.getElementById('mobileTabs');
+  steps.forEach((step, i) => {
+    const tab = document.createElement('button');
+    tab.className = 'proc-mobile-tab' + (i === 0 ? ' active' : '');
+    tab.setAttribute('aria-label', step.label);
+    tab.innerHTML = `
+      <div class="mob-num">${step.num}</div>
+      <div class="mob-label"><span>${step.label}</span></div>
+    `;
+    tab.addEventListener('click', () => setActive(i));
+    mobileTabs.appendChild(tab);
+  });
+
+  // ── Set active step ──
+  function setActive(index) {
+    const step = steps[index];
+
+    // Desktop: fade image
+    const img = document.getElementById('desktopImg');
+    img.style.opacity = '0';
+    setTimeout(() => {
+      img.src = step.img;
+      img.alt = step.alt;
+      img.style.opacity = '1';
+    }, 200);
+
+    // Desktop card update
+    const card = document.getElementById('desktopCard');
+    card.querySelector('.step-lbl').textContent   = 'Step ' + padNum(step.num);
+    card.querySelector('.step-title').textContent = step.label;
+    card.querySelector('.step-desc').textContent  = step.desc;
+
+    // Mobile card update
+    const mcard = document.getElementById('mobileCard');
+    mcard.querySelector('.step-lbl').textContent   = 'Step ' + padNum(step.num);
+    mcard.querySelector('.step-title').textContent = step.label;
+    mcard.querySelector('.step-desc').textContent  = step.desc;
+
+    // Desktop tabs active state
+    document.querySelectorAll('.proc-step').forEach((col, i) => {
+      col.classList.toggle('active', i === index);
+    });
+
+    // Mobile tabs active state
+    document.querySelectorAll('.proc-mobile-tab').forEach((tab, i) => {
+      tab.classList.toggle('active', i === index);
+    });
+  }
 
 
 
