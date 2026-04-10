@@ -688,5 +688,18 @@ techTabs.forEach((tab, i) => {
     });
   }
 
+const serviceCards = document.querySelectorAll('.service-card');
+if (serviceCards.length) {
+  serviceCards[0].classList.add('featured');
+  serviceCards.forEach(card => {
+    card.addEventListener('click', () => {
+      serviceCards.forEach(c => c.classList.remove('featured'));
+      card.classList.add('featured');
+    });
+  });
+}
+
+
+
 
 
