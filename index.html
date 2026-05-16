@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="robots" content="noindex" />
+    <!-- <meta name="robots" content="noindex" /> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire VR Game Developers | Virtual Reality Game Development Company</title>
@@ -24,7 +24,7 @@
     <script async src="https://ob.sornavellon.com/i/d0588d9f714d51a03cf53677a2c84cdb.js" class="ct_clicktrue"></script>
 
 
-    <script>
+    <script defer>
         (function (h, o, t, j, a, r) {
             h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
             h._hjSettings = { hjid: 6535866, hjsv: 6 };
@@ -35,7 +35,7 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <script type="text/javascript">
+    <script defer>
         (function (c, l, a, r, i, t, y) {
             c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
             t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
@@ -45,16 +45,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Inter:wght@300;400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet" />
-    <!-- <link href="https://fonts.cdnfonts.com/css/agency-fb" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preload" as="image" href="assets/images/Hero-image1.png" fetchpriority="high" media="(min-width: 480px)">
+    <link rel="preload" as="image" href="assets/images/Hero-image1.png" fetchpriority="high" media="(max-width: 479px)">
+<link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Rowdie:wght@300;400;700&family=Roboto:wght@400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </noscript>
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'" />
 </head>
 
 
@@ -65,8 +65,6 @@
             style="display:none;visibility:hidden"></iframe></noscript>
 
 
-    <noscript> <iframe src="https://ob.sornavellon.com/ns/d0588d9f714d51a03cf53677a2c84cdb.html?ch=" width="0"
-            height="0" style="display:none"></iframe></noscript>
 
     <noscript><iframe src="https://ob.sornavellon.com/ns/d0588d9f714d51a03cf53677a2c84cdb.html?ch=" width="0" height="0"
             style="display:none"></iframe></noscript>
@@ -78,7 +76,8 @@
         <nav class="navbar" id="navbar">
             <div class="nav-brand">
                 <div class="brand-logo">
-                    <img src="assets/images/logo.png" alt="Logo" onerror="this.style.display='none'" />
+<img src="assets/images/logo.png" alt="Logo" width="160" height="50" loading="eager"
+    onerror="this.style.display='none'">
                 </div>
             </div>
 
@@ -96,7 +95,7 @@
             <button class="btn-book-call"
                 onclick="document.getElementById('bookCallModal').classList.add('active'); document.body.style.overflow='hidden';">BOOK
                 A CALL</button>
-            <div class="nav-toggle" id="navToggle">
+            <div class="nav-toggle" id="navToggle"  aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </div>
         </nav>
@@ -110,8 +109,8 @@
                 <source media="(min-width: 767px)" srcset="assets/images/Hero-image1.png" />
                 <source media="(min-width: 479px)" srcset="assets/images/Hero-image1.png" />
                 <source media="(min-width: 300px)" srcset="assets/images/Hero-image1.png" />
-                <img src="assets/images/Hero-image1.png" alt="Hero Background" class="hero-bg-img"
-                    onerror="this.style.display='none'" />
+                <img src="assets/images/Hero-image1.png" alt="Hero Background" class="hero-bg-img" fetchpriority="high" decoding="auto"
+                    width="1440" height="820" loading="eager" onerror="this.style.display='none'">
             </picture>
             <div class="hero-overlay"></div>
         </div>
@@ -148,7 +147,7 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-icon-wrap">
-                        <img src="assets/images/stats11.png" alt="Experience" onerror="this.style.display='none'" />
+                        <img src="assets/images/stats11.png" alt="Experience" loading="lazy" decoding="async" width="60" height="60" onerror="this.style.display='none'" />
                     </div>
                     <div class="stat-text">
                         <h3 class="counter" data-target="10" data-suffix="+">0+</h3>
@@ -158,7 +157,7 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon-wrap">
-                        <img src="assets/images/stats22.png" alt="Developers" onerror="this.style.display='none'" />
+                        <img src="assets/images/stats22.png" alt="Developers" loading="lazy" decoding="async" width="60" height="60" onerror="this.style.display='none'" />
                     </div>
                     <div class="stat-text">
                         <h3 class="counter" data-target="150" data-suffix="+">0+</h3>
@@ -168,7 +167,7 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon-wrap">
-                        <img src="assets/images/stats33.png" alt="Games" onerror="this.style.display='none'" />
+                        <img src="assets/images/stats33.png" alt="Games" loading="lazy" decoding="async" width="60" height="60" onerror="this.style.display='none'" />
                     </div>
                     <div class="stat-text">
                         <h3 class="counter" data-target="120" data-suffix="+">0+</h3>
@@ -177,7 +176,7 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon-wrap">
-                        <img src="assets/images/stats44.png" alt="Clients" onerror="this.style.display='none'" />
+                        <img src="assets/images/stats44.png" alt="Clients" loading="lazy" decoding="async" width="60" height="60" onerror="this.style.display='none'" />
                     </div>
                     <div class="stat-text">
                         <h3 class="counter" data-target="100" data-suffix="%">0%</h3>
@@ -225,7 +224,7 @@
                     <div class="service-card" style="background-image: url('assets/images/card.png');">
 
                         <div class="service-thumb">
-                            <img src="assets/images/services11.png" alt="2D Game"
+                            <img src="assets/images/services11.png" alt="2D Game" loading="lazy" decoding="async" width="380" height="220"
                                 style="padding: 20px; border-radius: 24px;"
                                 onerror="this.src='https://placehold.co/380x200/1a1535/7B2FFF?text=2D+Game+Dev'" />
                             <div class="service-thumb-overlay"></div>
@@ -242,7 +241,7 @@
                     <div class="service-card" style="background-image: url('assets/images/card.png');">
 
                         <div class="service-thumb">
-                            <img src="assets/images/services33.png" alt="2D Game"
+                            <img src="assets/images/services33.png" alt="2D Game" loading="lazy" decoding="async" width="380" height="220"
                                 style="padding: 20px; border-radius: 24px;"
                                 onerror="this.src='https://placehold.co/380x200/1a1535/7B2FFF?text=2D+Game+Dev'" />
                             <div class="service-thumb-overlay"></div>
@@ -259,7 +258,7 @@
                     <div class="service-card" style="background-image: url('assets/images/card.png');">
 
                         <div class="service-thumb">
-                            <img src="assets/images/services22.png" alt="3D Game"
+                            <img src="assets/images/services22.png" alt="3D Game" loading="lazy" decoding="async" width="380" height="220"
                                 style="padding: 20px; border-radius: 24px;"
                                 onerror="this.src='https://placehold.co/380x200/1a1535/7B2FFF?text=3D+Game+Dev'" />
                             <div class="service-thumb-overlay"></div>
@@ -275,7 +274,7 @@
                     <div class="service-card" style="background-image: url('assets/images/card.png');">
 
                         <div class="service-thumb">
-                            <img src="assets/images/services44.png" alt="Cross Platform"
+                            <img src="assets/images/services44.png" alt="Cross Platform" loading="lazy" decoding="async" width="380" height="220"
                                 style="padding: 20px; border-radius: 24px;"
                                 onerror="this.src='https://placehold.co/380x200/1a1535/7B2FFF?text=Cross+Platform'" />
                             <div class="service-thumb-overlay"></div>
@@ -290,7 +289,7 @@
                     <div class="service-card" style="background-image: url('assets/images/card.png');">
 
                         <div class="service-thumb">
-                            <img src="assets/images/services55.png" alt="Multiplayer"
+                            <img src="assets/images/services55.png" alt="Multiplayer" loading="lazy" decoding="async" width="380" height="220"
                                 style="padding: 20px; border-radius: 24px;"
                                 onerror="this.src='https://placehold.co/380x200/1a1535/7B2FFF?text=Multiplayer'" />
                             <div class="service-thumb-overlay"></div>
@@ -305,7 +304,7 @@
                     <div class="service-card" style="background-image: url('assets/images/card.png');">
 
                         <div class="service-thumb">
-                            <img src="assets/images/services66.png" alt="MVP"
+                            <img src="assets/images/services66.png" alt="MVP" loading="lazy" decoding="async" width="380" height="220"
                                 style="padding: 20px; border-radius: 24px;"
                                 onerror="this.src='https://placehold.co/380x200/1a1535/7B2FFF?text=Prototype+MVP'" />
                             <div class="service-thumb-overlay"></div>
@@ -332,13 +331,13 @@
 
         <!-- Desktop background image -->
         <div class="why-bg-img-wrap desktop-only">
-            <img src="assets/images/why-bg.png" alt="" class="why-bg-img" onerror="this.style.display='none'" />
+            <img src="assets/images/why-bg.png" alt="" class="why-bg-img" loading="lazy" decoding="async" onerror="this.style.display='none'" />
             <div class="why-bg-overlay"></div>
         </div>
 
         <!-- Mobile background image -->
         <div class="why-bg-img-wrap mobile-only" style="display:none;">
-            <img src="assets/images/why-bg.png" alt="" class="why-bg-img" onerror="this.style.display='none'" />
+            <img src="assets/images/why-bg.png" alt="" class="why-bg-img" loading="lazy" decoding="async" onerror="this.style.display='none'" />
             <div class="why-bg-overlay"></div>
         </div>
 
@@ -579,7 +578,7 @@
                                         interactive gameplay experiences.</p>
                                 </div>
                                 <div class="ptab-image">
-                                    <img src="assets/images/platform-character11.png" alt="iOS Game"
+                                    <img src="assets/images/platform-character11.png" alt="Meta Quest" loading="lazy" decoding="async" width="200" height="140"
                                         onerror="this.src='https://placehold.co/200x140/1a1535/7B2FFF?text=iOS+Game'" />
                                 </div>
                             </div>
@@ -597,7 +596,7 @@
                                         interaction, and high-quality visuals.</p>
                                 </div>
                                 <div class="ptab-image">
-                                    <img src="assets/images/platform-character22.png" alt="iOS Game"
+                                    <img src="assets/images/platform-character22.png" alt="HTC Vive" loading="lazy" decoding="async" width="200" height="140"
                                         onerror="this.src='https://placehold.co/200x140/1a1535/7B2FFF?text=iOS+Game'" />
                                 </div>
                             </div>
@@ -615,7 +614,7 @@
                                         console-level performance.</p>
                                 </div>
                                 <div class="ptab-image">
-                                    <img src="assets/images/platform-character33.png" alt="iOS Game"
+                                    <img src="assets/images/platform-character33.png" alt="PlayStation VR" loading="lazy" decoding="async" width="200" height="140"
                                         onerror="this.src='https://placehold.co/200x140/1a1535/7B2FFF?text=iOS+Game'" />
                                 </div>
                             </div>
@@ -632,7 +631,7 @@
                                         advanced gameplay experiences.</p>
                                 </div>
                                 <div class="ptab-image">
-                                    <img src="assets/images/platform-character44.png" alt="iOS Game"
+                                    <img src="assets/images/platform-character44.png" alt="PC VR" loading="lazy" decoding="async" width="200" height="140"
                                         onerror="this.src='https://placehold.co/200x140/1a1535/7B2FFF?text=iOS+Game'" />
                                 </div>
                             </div>
@@ -653,7 +652,7 @@
             <div class="genres-layout">
                 <div class="genres-left">
                     <div class="genre-img-wrapper">
-                        <img src="assets/images/vr1.png" class="genre-char-img" id="genreOverlayImg" alt="bg" />
+                        <img src="assets/images/vr1.png" class="genre-char-img" loading="lazy" decoding="async" width="600" height="400" id="genreOverlayImg" alt="bg" />
                     </div>
                 </div>
 
@@ -774,7 +773,7 @@
                     <!-- Left: image + info card -->
                     <div class="proc-img-panel">
                         <img class="proc-img" id="desktopImg" src="assets/images/requrmenet1.png"
-                            alt="Team discussing game requirements" width="600" height="420" loading="lazy" />
+                            alt="Team discussing game requirements" width="600" height="420" decoding="async" loading="lazy" />
                         <div class="proc-info-card" id="desktopCard">
                             <span class="step-lbl">Step 01</span>
                             <div class="step-title">Requirement Discussion</div>
@@ -794,7 +793,7 @@
         <div class="process-mobile">
 
             <!-- Title repeated for mobile (left-aligned, shown only on mobile) -->
-            <h2 class="process-title">Our Game Development Process</h2>
+            <h2 class="process-title">VR Game Development Process</h2>
 
             <!-- White info card -->
             <div class="proc-mobile-card" id="mobileCard">
@@ -844,7 +843,7 @@
                 <!-- Tab 0: Game Engines -->
                 <div class="tech-panel active">
                     <div class="tech-logos">
-                        <div class="tech-logo-item"><img src="assets/images/unity1.png" alt="Unity" /><span></span>
+                        <div class="tech-logo-item"><img src="assets/images/unity1.png" alt="Unity" loading="lazy" decoding="async" width="80" height="80" /><span></span>
                         </div>
                         <div class="tech-logo-item">
                             <svg width="172" height="36" viewBox="0 0 172 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -904,9 +903,9 @@
             <!-- Tab 1: Programming Languages -->
             <div class="tech-panel">
                 <div class="tech-logos">
-                    <div class="tech-logo-item"><img src="assets/images/cplusnew11.png" alt="C++" /><span></span></div>
-                    <div class="tech-logo-item"><img src="assets/images/chasnew11.png" alt="C#" /><span></span></div>
-                    <div class="tech-logo-item"><img src="assets/images/jsnew11.png" alt="C#" /><span></span></div>
+                    <div class="tech-logo-item"><img src="assets/images/cplusnew11.png" alt="C++" loading="lazy" decoding="async" width="80" height="80" /><span></span></div>
+                    <div class="tech-logo-item"><img src="assets/images/chasnew11.png" alt="C#" loading="lazy" decoding="async" width="80" height="80" /><span></span></div>
+                    <div class="tech-logo-item"><img src="assets/images/jsnew11.png" alt="C#" loading="lazy" decoding="async" width="80" height="80" /><span></span></div>
 
                 </div>
             </div>
@@ -916,16 +915,16 @@
                 <div class="tech-logos">
 
                     <div class="tech-logo-item">
-                        <img src="assets/images/openxr.png" alt="openxr" /> <span></span>
+                        <img src="assets/images/openxr.png" alt="openxr" loading="lazy" decoding="async" width="80" height="80" /> <span></span>
                     </div>
 
                     <div class="tech-logo-item">
-                        <img src="assets/images/oculus.png" alt="oculus" />
+                        <img src="assets/images/oculus.png" alt="oculus" loading="lazy" decoding="async" width="80" height="80" />
                         <span></span>
                     </div>
 
                     <div class="tech-logo-item">
-                        <img src="assets/images/steamvr.png" alt="steamvr" /> <span></span>
+                        <img src="assets/images/steamvr.png" alt="steamvr" loading="lazy" decoding="async" width="80" height="80" /> <span></span>
                     </div>
 
 
@@ -976,8 +975,8 @@
             <!-- Tab 4: Database -->
             <div class="tech-panel">
                 <div class="tech-logos">
-                    <div class="tech-logo-item"><img src="assets/images/mongo.png" alt="MongoDB" /><span></span></div>
-                    <div class="tech-logo-item"><img src="assets/images/fireb.png" alt="MySQL" /><span></span>
+                    <div class="tech-logo-item"><img src="assets/images/mongo.png"  alt="MongoDB" loading="lazy" decoding="async" width="80" height="80" /><span></span></div>
+                    <div class="tech-logo-item"><img src="assets/images/fireb.png" alt="MySQL" loading="lazy" decoding="async" width="80" height="80" /><span></span>
                     </div>
 
                 </div>
@@ -1000,7 +999,7 @@
             <div class="portfolio-slider-wrapper">
                 <div class="portfolio-grid" id="portfolioSlider">
                     <div class="portfolio-card">
-                        <img src="assets/images/portfolio11.png" alt="VR Combat Arena"
+                        <img src="assets/images/portfolio11.png" alt="VR Combat Arena" loading="lazy" decoding="async" width="420" 
                             onerror="this.src='https://placehold.co/420x220/1a1535/7B2FFF?text=Titan+Siege+Arena'" />
                         <div class="portfolio-info">
                             <h4>VR Combat Arena</h4>
@@ -1044,12 +1043,12 @@
 
 
                         </div>
-                        <img src="assets/images/portfolio22.png" alt="Crystal Cavern Puzzle"
+                        <img src="assets/images/portfolio22.png" alt="Crystal Cavern Puzzle" loading="lazy" decoding="async" width="420" 
                             onerror="this.src='https://placehold.co/420x220/1a1535/7B2FFF?text=Crystal+Cavern+Puzzle'" />
                     </div>
 
                     <div class="portfolio-card">
-                        <img src="assets/images/portfolio33.png" alt="Slot Casino Rush"
+                        <img src="assets/images/portfolio33.png" alt="Slot Casino Rush" loading="lazy" decoding="async" width="420" 
                             onerror="this.src='https://placehold.co/420x220/1a1535/7B2FFF?text=Slot+Casino+Rush'" />
                         <div class="portfolio-info">
                             <h4>Haunted Escape VR</h4>
@@ -1091,7 +1090,7 @@
                             </a>
 
                         </div>
-                        <img src="assets/images/portfolio44.png" alt="Game 4"
+                        <img src="assets/images/portfolio44.png" alt="Game 4" loading="lazy" decoding="async" width="420" 
                             onerror="this.src='https://placehold.co/420x220/1a1535/7B2FFF?text=Game+4'" />
                     </div>
                 </div>
@@ -1110,7 +1109,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta-section" style="background: url('assets/images/hero-image-1.png') ">
+<section class="cta-section" style="background: url('assets/images/hero-image-1.png') center center / cover no-repeat;">
         <div class="container">
             <div class="cta-layout">
 
@@ -1177,13 +1176,13 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 
     <!-- Book a Call Modal -->
     <div class="modal-overlay" id="bookCallModal"
         onclick="if(event.target===this){this.classList.remove('active'); document.body.style.overflow='';}">
         <div class="modal-box">
-            <button class="modal-close" id="modalClose"
+            <button class="modal-close" id="modalClose" aria-label="Close modal"
                 onclick="document.getElementById('bookCallModal').classList.remove('active'); document.body.style.overflow='';">
                 <i class="fas fa-times"></i>
             </button>
@@ -1193,13 +1192,14 @@
             <form class="book-form" id="bookForm">
                 <div class="form-row">
                     <div class="form-group">
-                        <label>Full Name</label>
+                        <label for="bookFullName">Full Name</label>
+
                         <input type="text" id="bookFullName" placeholder="John Doe"
                             oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')" />
                         <span class="field-error" id="err-bookFullName"></span>
                     </div>
                     <div class="form-group">
-                        <label>Email Address</label>
+                        <label for="bookEmail">Email Address</label>
                         <input type="email" id="bookEmail" placeholder="john@example.com" />
                         <span class="field-error" id="err-bookEmail"></span>
                     </div>
@@ -1207,20 +1207,20 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label>Phone Number</label>
+                        <label for="bookPhone">Phone Number</label>
                         <input type="tel" id="bookPhone" placeholder="+1 234 567 890"
                             oninput="this.value=this.value.replace(/[^0-9+\s\-()]/g,'')" />
                         <span class="field-error" id="err-bookPhone"></span>
                     </div>
                     <div class="form-group">
-                        <label>Company / Studio Name</label>
+                        <label for="bookCompany">Company / Studio Name</label>
                         <input type="text" id="bookCompany" placeholder="Game Studio Inc." />
                         <span class="field-error" id="err-bookCompany"></span>
                     </div>
                 </div>
 
                 <div class="form-group full">
-                    <label>Project Type</label>
+                    <label for="bookProjectType">Project Type</label>
                     <select id="bookProjectType">
                         <option value="" disabled selected>Select a service</option>
                         <option>2D Mobile Game Development</option>
@@ -1234,7 +1234,7 @@
                 </div>
 
                 <div class="form-group full">
-                    <label>Project Budget</label>
+                    <label for="bookBudget">Project Budget</label>
                     <select id="bookBudget">
                         <option value="" disabled selected>Select budget range</option>
                         <option>Under $5,000</option>
@@ -1246,7 +1246,7 @@
                 </div>
 
                 <div class="form-group full">
-                    <label>Tell Us About Your Project</label>
+                    <label for="bookMessage">Tell Us About Your Project</label>
                     <textarea id="bookMessage" rows="4"
                         placeholder="Describe your game idea, features, platforms, timeline..."></textarea>
                     <span class="field-error" id="err-bookMessage"></span>
@@ -1265,7 +1265,7 @@
     <div class="modal-overlay" id="consultModal"
         onclick="if(event.target===this){this.classList.remove('active'); document.body.style.overflow='';}">
         <div class="consult-box">
-            <button class="consult-close"
+            <button class="consult-close" aria-label="Close consultation modal"
                 onclick="document.getElementById('consultModal').classList.remove('active'); document.body.style.overflow='';">
                 ✕
             </button>
@@ -1275,24 +1275,24 @@
 
             <form id="consultForm">
                 <div class="consult-group">
-                    <label>Full Name</label>
+                    <label for="consultName">Full Name</label>
                     <input type="text" id="consultName" placeholder="Full name"
                         oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')" />
                     <span class="field-error" id="err-consultName"></span>
                 </div>
                 <div class="consult-group">
-                    <label>Business Email</label>
+                    <label for="consultEmail">Business Email</label>
                     <input type="email" id="consultEmail" placeholder="Business email" />
                     <span class="field-error" id="err-consultEmail"></span>
                 </div>
                 <div class="consult-group">
-                    <label>Phone Number</label>
+                    <label for="consultPhone">Phone Number</label>
                     <input type="tel" id="consultPhone" placeholder="Phone number"
                         oninput="this.value=this.value.replace(/[^0-9+\s\-()]/g,'')" />
                     <span class="field-error" id="err-consultPhone"></span>
                 </div>
                 <div class="consult-group">
-                    <label>Share your requirements</label>
+                    <label for="consultRequirement">Share your requirements</label>
                     <textarea id="consultRequirement" rows="4" placeholder="Tell us your requirements"></textarea>
                     <span class="field-error" id="err-consultRequirement"></span>
                 </div>
@@ -1308,7 +1308,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                                                             
         
     <script>
         (function () {
